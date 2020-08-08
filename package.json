@@ -1,0 +1,22 @@
+{
+  "name": "nlw2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ShiroKyu/NLW-Proffy.git",
+  "author": "Paulo <paulo.leite@academico.ifpb.edu.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  }
+}
