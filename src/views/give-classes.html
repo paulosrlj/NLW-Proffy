@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proffy | Sua plataforma de estudos online</title>
-    
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/partials/header.css">
     <link rel="stylesheet" href="styles/partials/forms.css">
@@ -32,7 +32,7 @@
           </header>
 
           <main>
-            <form action="" id='create-class'>
+            <form method="POST" action="/save-classes" id='create-class'>
               <fieldset>
                 <legend>Seus dados</legend>
 
@@ -63,7 +63,7 @@
                 <div class="select-block">
                   <label for="subject"> Matéria</label>
                   <select name="subject" id="subject" required>
-                    
+
                     <option value="" disabled='' hidden=''>Selecione uma opção</option>
                     {%for subject in subjects %}
                       <option value="{{loop.index}}">{{subject}}</option>
@@ -88,7 +88,7 @@
                     <label for="weekday">Dia da semana</label>
                     <select name="weekday[]" required>
                       <option value="">Selecione uma opção</option>
-                      
+
                       {%for weekday in weekdays %}
                         <option value="{{loop.index}}">{{weekday}}</option>
                       {%endfor%}
@@ -107,7 +107,7 @@
                   </div>
                 </div>
 
-            
+
               </fieldset>
             </form>
 
@@ -121,6 +121,6 @@
             </footer>
           </main>
       </div>
-   
+
   </body>
 </html>

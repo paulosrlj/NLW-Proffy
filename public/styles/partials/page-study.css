@@ -30,7 +30,7 @@
    text-decoration: none;
 
    transition: background 0.2s;
-   margin-top: 2.5rem; 
+   margin-top: 2.5rem;
 }
 
 #search-teachers button:hover {
@@ -130,6 +130,12 @@
     background: var(--color-secondary-dark);
 }
 
+#page-study main .no-results {
+    max-width: 30rem;
+    margin: 12rem auto;
+    text-align: center;
+}
+
 @media (min-width: 700px) {
     #page-study #container {
         max-width: 100vw;
@@ -156,7 +162,7 @@
     }
 
     .page-header .header-content strong {
-       max-width: 350px; 
+       max-width: 350px;
     }
 
     .teacher-item header,
